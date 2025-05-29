@@ -1,0 +1,715 @@
+[
+    {
+        "id": "90e5af0101e68110",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e05a3d7ebe3f9112",
+        "type": "ui_tab",
+        "name": "Weather Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5bd98cd24840cc35",
+        "type": "ui_group",
+        "name": "Weather Station",
+        "tab": "e05a3d7ebe3f9112",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "48130315f90e95f2",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "transport",
+        "type": "ui_tab",
+        "name": "Transportation System",
+        "icon": "car",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dashboard",
+        "type": "ui_group",
+        "name": "Trip Planner",
+        "tab": "transport",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "15cb3f6983a4c54a",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4fb2644a12a13140",
+        "type": "ui_group",
+        "name": "Main",
+        "tab": "15cb3f6983a4c54a",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "be364d18.f20c98",
+        "type": "ui_tab",
+        "name": "Tracking Dashboard",
+        "icon": "fa-bus",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b8a4bc6a.9d8c58",
+        "type": "ui_group",
+        "name": "Bus Tracking",
+        "tab": "be364d18.f20c98",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "0098e90a493f1226",
+        "type": "ui_tab",
+        "name": "Adelaide Transport",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6e47af04502e6fbf",
+        "type": "ui_group",
+        "name": "Bus Info",
+        "tab": "0098e90a493f1226",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false
+    },
+    {
+        "id": "b211b4bcca7f8663",
+        "type": "ui_group",
+        "name": "Weather Info",
+        "tab": "0098e90a493f1226",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false
+    },
+    {
+        "id": "ui_tab_main",
+        "type": "ui_tab",
+        "name": "Adelaide Transport",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1614ae898837bc72",
+        "type": "ui_group",
+        "name": "Bus Info",
+        "tab": "ui_tab_main",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false
+    },
+    {
+        "id": "b63d3c6d0a07296a",
+        "type": "ui_group",
+        "name": "Weather Info",
+        "tab": "ui_tab_main",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false
+    },
+    {
+        "id": "46b16c36cd1a5a09",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7a962b370d7e3605",
+        "type": "ui_group",
+        "name": "Input",
+        "tab": "ui_tab_main",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
+        "id": "04d938ca053b2bfe",
+        "type": "ui_group",
+        "name": "Output",
+        "tab": "ui_tab_main",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false
+    },
+    {
+        "id": "15bd6ffca9283068",
+        "type": "ui_group",
+        "name": "Air Quality Info",
+        "tab": "ui_tab_main",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
+        "id": "fad93879335f66f0",
+        "type": "inject",
+        "z": "90e5af0101e68110",
+        "name": "Request",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            [
+                "3e0340bb94af67da",
+                "d1eb2f91b9d44745",
+                "4758c771820ab065"
+            ]
+        ]
+    },
+    {
+        "id": "3e0340bb94af67da",
+        "type": "http request",
+        "z": "90e5af0101e68110",
+        "name": "Get Adelaide Metro GTFS",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "https://gtfs.adelaidemetro.com.au/v1/realtime/vehicle_positions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "58fac85c452dc91e"
+            ]
+        ]
+    },
+    {
+        "id": "58fac85c452dc91e",
+        "type": "gtfs-feed",
+        "z": "90e5af0101e68110",
+        "name": "Convert GTFS protobuf",
+        "x": 550,
+        "y": 120,
+        "wires": [
+            [
+                "a5e2aa9043011921"
+            ]
+        ]
+    },
+    {
+        "id": "f33520d27748e36b",
+        "type": "worldmap",
+        "z": "90e5af0101e68110",
+        "name": "Bus Locations Map",
+        "lat": "-34.921230",
+        "lon": "138.599503",
+        "zoom": "13",
+        "layer": "OSMC",
+        "cluster": "false",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/livebus",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriO,EsriDG,NatGeo,UKOS,OpTop",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 1110,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d1eb2f91b9d44745",
+        "type": "function",
+        "z": "90e5af0101e68110",
+        "name": "Build Weather API URL",
+        "func": "const apiKey = \"db9aa16786b4d459d1d7397a92fa6b4c\";\nconst lat = \"-34.921230\";\nconst lon = \"138.599503\";\n\nmsg.url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "6ba7f4ed68972852"
+            ]
+        ]
+    },
+    {
+        "id": "6ba7f4ed68972852",
+        "type": "http request",
+        "z": "90e5af0101e68110",
+        "name": "Call Weather API",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 470,
+        "y": 360,
+        "wires": [
+            [
+                "9cd9641e6f655fbc"
+            ]
+        ]
+    },
+    {
+        "id": "9cd9641e6f655fbc",
+        "type": "function",
+        "z": "90e5af0101e68110",
+        "name": "Parse Weather data",
+        "func": "const data = msg.payload;\n\n// Check if we have valid data\nif (!data || !data.main || !data.weather || !data.weather[0]) {\n    return null; // Exit if we don't have proper data\n}\n\nmsg.payload = {\n    temperature: data.main.temp,\n    description: data.weather[0].description,\n    icon: `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 360,
+        "wires": [
+            [
+                "fb809a303b9a9f22"
+            ]
+        ]
+    },
+    {
+        "id": "fb809a303b9a9f22",
+        "type": "ui_template",
+        "z": "90e5af0101e68110",
+        "group": "b63d3c6d0a07296a",
+        "name": "Weather Info",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "format": "<div style=\"text-align:center;\">\n  <h3>Current Weather in Adelaide</h3>\n  <img src=\"{{msg.payload.icon}}\" alt=\"Weather Icon\" style=\"width:100px;\"><br>\n  <b>{{msg.payload.temperature}} °C</b><br>\n  <i>{{msg.payload.description}}</i>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df456f6d814cff2c",
+        "type": "debug",
+        "z": "90e5af0101e68110",
+        "name": "debug flow",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a5e2aa9043011921",
+        "type": "function",
+        "z": "90e5af0101e68110",
+        "name": "Extract bus data",
+        "func": "// Make sure we have valid data\nif (!msg.payload || !msg.payload.entity) {\n    node.warn(\"Invalid GTFS data received\");\n    return null;\n}\n\n// Extract vehicle array\nlet buses = msg.payload.entity.filter(e => e.vehicle && e.vehicle.position);\n\n// Map to useful format for map display\nlet mapBuses = buses.map(b => ({\n    name: b.vehicle.vehicle.id || \"Unknown\",\n    id: b.vehicle.vehicle.id || \"Unknown\",\n    lat: b.vehicle.position.latitude,\n    lon: b.vehicle.position.longitude,\n    layer: \"Buses\",\n    icon: \":bus:\",\n    iconColor: \"blue\",\n    trip_id: b.vehicle.trip ? b.vehicle.trip.trip_id : \"Unknown\",\n    // Add a random estimated arrival time for demonstration\n    // In a real app, you would calculate this based on real data\n    estimated_arrival: `${Math.floor(Math.random() * 40) + 5} mins`\n}));\n\n// Map to table format\nlet tableBuses = mapBuses.map(bus => ({\n    \"Bus ID\": bus.id,\n    \"Estimated Arrival\": bus.estimated_arrival\n}));\n\n// Store in context for future use\ncontext.set('buses', mapBuses);\n\n// Send to map and table\nreturn [\n    { payload: mapBuses },   // For the map\n    { payload: tableBuses }  // For the table\n];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 140,
+        "wires": [
+            [
+                "f33520d27748e36b"
+            ],
+            [
+                "151112e00315c766",
+                "df456f6d814cff2c"
+            ]
+        ]
+    },
+    {
+        "id": "151112e00315c766",
+        "type": "ui_table",
+        "z": "90e5af0101e68110",
+        "group": "1614ae898837bc72",
+        "name": "Bus Arrival Times",
+        "order": 1,
+        "width": 12,
+        "height": 8,
+        "columns": [
+            {
+                "field": "Bus ID",
+                "title": "Bus ID",
+                "width": "50%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Estimated Arrival",
+                "title": "Estimated Arrival",
+                "width": "50%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 970,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4758c771820ab065",
+        "type": "function",
+        "z": "90e5af0101e68110",
+        "name": "Build AirVisual API URL",
+        "func": "// AirVisual API key - sign up at https://www.iqair.com/us/air-pollution-data-api\nconst apiKey = \"1a1f3ce3-7b55-49f3-b429-f184314e33c0\";\nconst lat = \"-34.921230\";\nconst lon = \"138.599503\";\n\n// Build API URL for nearest city data\nmsg.url = `https://api.airvisual.com/v2/nearest_city?lat=${lat}&lon=${lon}&key=${apiKey}`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 500,
+        "wires": [
+            [
+                "cdd2e54ec3e641ac"
+            ]
+        ]
+    },
+    {
+        "id": "cdd2e54ec3e641ac",
+        "type": "http request",
+        "z": "90e5af0101e68110",
+        "name": "Call AirVisual API",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 470,
+        "y": 500,
+        "wires": [
+            [
+                "a7d73b388a72d37c"
+            ]
+        ]
+    },
+    {
+        "id": "a7d73b388a72d37c",
+        "type": "function",
+        "z": "90e5af0101e68110",
+        "name": "Parse Air Quality data",
+        "func": "const data = msg.payload;\n\n// Check if we have valid data\nif (!data || !data.data || !data.data.current || !data.data.current.pollution) {\n    node.warn(\"Invalid AirVisual data received\");\n    return null; // Exit if we don't have proper data\n}\n\n// Extract air quality data\nconst aqi = data.data.current.pollution.aqius;\nlet level, color;\n\n// Determine AQI level and color based on US EPA standard\nif (aqi <= 50) {\n    level = \"Good\";\n    color = \"#00e400\";\n} else if (aqi <= 100) {\n    level = \"Moderate\";\n    color = \"#ffff00\";\n} else if (aqi <= 150) {\n    level = \"Unhealthy for Sensitive Groups\";\n    color = \"#ff7e00\";\n} else if (aqi <= 200) {\n    level = \"Unhealthy\";\n    color = \"#ff0000\";\n} else if (aqi <= 300) {\n    level = \"Very Unhealthy\";\n    color = \"#8f3f97\";\n} else {\n    level = \"Hazardous\";\n    color = \"#7e0023\";\n}\n\n// Create payload with air quality information\nmsg.payload = {\n    aqi: aqi,\n    level: level,\n    color: color,\n    city: data.data.city || \"Adelaide\",\n    ts: data.data.current.pollution.ts\n};\n\n// Add air quality info to the map\nlet mapMsg = {\n    payload: {\n        name: \"Air Quality\",\n        lat: -34.921230,\n        lon: 138.599503,\n        icon: \"cloud\",\n        iconColor: color,\n        label: `AQI: ${aqi} - ${level}`,\n        layer: \"Air Quality\"\n    }\n};\n\n// Send both messages\nreturn [msg, mapMsg];\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 500,
+        "wires": [
+            [
+                "a8956fbaca45e390"
+            ],
+            [
+                "f33520d27748e36b"
+            ]
+        ]
+    },
+    {
+        "id": "a8956fbaca45e390",
+        "type": "ui_template",
+        "z": "90e5af0101e68110",
+        "group": "15bd6ffca9283068",
+        "name": "Air Quality Info",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "format": "<div style=\"text-align:center;\">\n  <h3>Air Quality in Adelaide</h3>\n  <div style=\"position:relative; width:150px; height:150px; margin:0 auto; border-radius:50%; background:{{msg.payload.color}}; display:flex; align-items:center; justify-content:center;\">\n    <span style=\"font-size:36px; font-weight:bold; color:white;\">{{msg.payload.aqi}}</span>\n  </div>\n  <h4 style=\"margin-top:10px;\">{{msg.payload.level}}</h4>\n  <p><small>Last updated: {{msg.payload.ts | date:'medium'}}</small></p>\n  <div style=\"margin-top:10px; text-align:left; font-size:12px;\">\n    <p><strong>Air Quality Index (AQI)</strong></p>\n    <ul style=\"padding-left:20px;\">\n      <li>0-50: Good</li>\n      <li>51-100: Moderate</li>\n      <li>101-150: Unhealthy for Sensitive Groups</li>\n      <li>151-200: Unhealthy</li>\n      <li>201-300: Very Unhealthy</li>\n      <li>301+: Hazardous</li>\n    </ul>\n  </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    }
+]
